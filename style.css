@@ -24,11 +24,25 @@ li {
 .footer {
 	padding:5px;
 	font-size:0.9em;
+	background-color: #FFFCF7;
+	box-shadow:0px 0px 5px #FFF0D6;
+	color: #8F7E71;
+}
+
+.footertext {
+	float:left;
+}
+
+.license {
+	float:right;
 }
 
 #post {
 	margin: 5px;
-	padding: 5px;
-	background-color: #FFFCF7;
-	border: 1px #FFFBF5 soldi;
+	padding: 3px 10px 3px 10px;
+}
+
+.postexcerpt {
+	font-size:0.9em;
+	color: #8F7E71;
 }
