@@ -3,6 +3,16 @@
 	margin:0px auto;
 }
 
+.header {
+	padding:5px;
+	font-size:2em;
+}
+
+.footer {
+	padding:5px;
+	font-size:0.9em;
+}
+
 #post {
 	margin: 5px;
 	padding: 5px;
