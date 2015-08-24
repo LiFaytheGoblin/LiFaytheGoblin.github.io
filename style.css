@@ -1,0 +1,11 @@
+.container {
+	width: 800px;
+	margin:0px auto;
+}
+
+#post {
+	margin: 5px;
+	padding: 5px;
+	background-color: #FFFCF7;
+	border: 1px #FFFBF5 soldi;
+}
