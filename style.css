@@ -1,3 +1,16 @@
+a {
+    color: #AB7243;
+	text-decoration: none;
+}
+
+a:hover {
+    color: #EDA164;
+}
+
+li {
+	list-style-type: none;
+}
+
 .container {
 	width: 800px;
 	margin:0px auto;
