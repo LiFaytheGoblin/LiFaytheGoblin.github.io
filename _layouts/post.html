@@ -2,5 +2,9 @@
 layout: default
 ---
 <div id="post">
+<h2>{{ page.title }}</h2>
+
 {{ content }}
+
+<div class="dateonpost">{{ page.date | date_to_string }} | <a href="https://twitter.com/share" class="twitter-share-button" data-via="lifays" data-count="none">Share</a> | <a href="/" title="back">Go back</a></div>
 </div>

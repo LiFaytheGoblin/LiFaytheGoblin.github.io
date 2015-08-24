@@ -1,3 +1,8 @@
+body {
+	background-color:#FFCE7D;
+	color:#404040;
+}
+
 a {
     color: #9E654C;
 	text-decoration: none;
@@ -13,23 +18,36 @@ li {
 }
 
 li:before {
-  content: "♠";
-  font-size:1.2em;
+	content: "♠";
+	font-size:1.2em;
 }
 
 .container {
-	width: 800px;
+	width: 900px;
 	margin:0px auto;
+	margin-top:50px;
+}
+
+.notfooter {
+	padding:5px;
+	background-color: #FFFCF7;
+	box-shadow:0px 0px 5px #FFF0D6;
 }
 
 .header {
-	margin-bottom:10px;
+	padding-left: 20px;
 	font-size:1.1em;
 }
 
+.postexcerpt {
+	font-size:0.9em;
+	color: #8F7E71;
+	
+}
+
 .footer {
-	padding:5px;
-	margin-top:10px;
+	padding:8px;
+	margin-top:20px;
 	font-size:0.9em;
 	background-color: #FFFCF7;
 	box-shadow:0px 0px 5px #FFF0D6;
@@ -46,11 +64,12 @@ li:before {
 
 #post {
 	margin: 5px;
-	padding: 3px 10px 3px 10px;
+	padding: 10px 20px 10px 20px;
 }
 
-.postexcerpt {
+.dateonpost {
+	padding-top:10px;
 	font-size:0.9em;
 	color: #8F7E71;
-	
+	text-align:right;
 }
