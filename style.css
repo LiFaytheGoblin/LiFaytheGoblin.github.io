@@ -1,6 +1,7 @@
 body {
 	background-color:#FFCE7D;
 	color:#404040;
+	font-family: 'Maven Pro', sans-serif;
 }
 
 a {
@@ -12,20 +13,29 @@ a:hover {
     color: #FFCE7D;
 }
 
+a li {
+	font-size:1.2em;
+	font-weight:bold;
+	font-family: 'Julius Sans One', sans-serif;
+}
+
+a li:hover {
+	opacity: 0.8;
+}
+
 li {
 	list-style-type: none;
-	font-size:1.1em;
 }
 
 li:before {
 	content: "♠";
 	font-size:1.2em;
+	color:#404040;
 }
 
-li:hover {
-	opacity: 0.8;
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Julius Sans One', sans-serif;
 }
-
 
 .container {
 	width: 900px;
@@ -40,15 +50,15 @@ li:hover {
 }
 
 .header {
-	padding-left: 20px;
-	font-size:1.1em;
+	padding: 0px 20px 0px 20px;
 }
 
 .postexcerpt {
 	opacity: 1.0;
-	font-size:0.9em;
+	font-size:0.8em;
 	color: #8F7E71;
-	
+	font-weight: normal;
+	font-family: 'Maven Pro', sans-serif;
 }
 
 .footer {
@@ -73,7 +83,7 @@ li:hover {
 	padding: 10px 20px 10px 20px;
 }
 
-.dateonpost {
+.subpost {
 	padding-top:10px;
 	font-size:0.9em;
 	color: #8F7E71;
