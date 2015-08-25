@@ -22,6 +22,11 @@ li:before {
 	font-size:1.2em;
 }
 
+li:hover {
+	opacity: 0.8;
+}
+
+
 .container {
 	width: 900px;
 	margin:0px auto;
@@ -40,6 +45,7 @@ li:before {
 }
 
 .postexcerpt {
+	opacity: 1.0;
 	font-size:0.9em;
 	color: #8F7E71;
 	
