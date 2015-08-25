@@ -4,13 +4,13 @@ title: Lifay's Blog
 ---
 <ul>
   {% for post in site.posts %}
-	<a href="{{ post.url }}" title="{{ post.title }}">
     <li>
+	  <a href="{{ post.url }}" title="{{ post.title }}">
       <b>{{ post.date | date_to_string }}</b> &minus; {{ post.title }}
 	  <div class="postexcerpt">
 		{{ post.excerpt }} ...
 	  </div>
+	  </a>
     </li>
-	</a>
   {% endfor %}
 </ul>
