@@ -46,7 +46,7 @@ h1, h2, h3, h4, h5, h6 {
 .notfooter {
 	padding:5px;
 	background-color: #FFFCF7;
-	box-shadow:0px 0px 5px #FFF0D6;
+	box-shadow:0px 0px 10px #D49757;
 }
 
 .header {
@@ -66,7 +66,7 @@ h1, h2, h3, h4, h5, h6 {
 	margin-top:20px;
 	font-size:0.9em;
 	background-color: #FFFCF7;
-	box-shadow:0px 0px 5px #FFF0D6;
+	box-shadow:0px 0px 10px #D49757;
 	color: #8F7E71;
 }
 
@@ -76,6 +76,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .license {
 	float:right;
+	opacity:0.4;
+}
+
+.license:hover {
+	opacity:0.6;
 }
 
 #post {
