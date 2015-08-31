@@ -94,3 +94,14 @@ h1, h2, h3, h4, h5, h6 {
 	color: #8F7E71;
 	text-align:right;
 }
+
+#post img {
+	vertical-align: middle;
+	width:250px;
+	padding:5px;
+}
+
+.caption {
+	font-size:0.9em;
+	color:#8F7E71;
+}
