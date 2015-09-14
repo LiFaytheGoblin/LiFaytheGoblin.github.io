@@ -1,3 +1,4 @@
+//Twitter
 !function(d,s,id){
 	var js, fjs=d.getElementsByTagName(s)[0], p=/^http:/.test(d.location)?'http':'https';
 	if(!d.getElementById(id)){
@@ -9,6 +10,7 @@
 }
 (document, 'script', 'twitter-wjs');
 
+//jQuery Styling
 $(document).ready(function(){
 	$(".licensetext").hide();
 	$(".license").hover(
