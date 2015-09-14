@@ -2,15 +2,20 @@
 layout: default
 title: Lifay's Blog
 ---
-<ul>
-  {% for post in site.posts %}
-		<a href="{{ post.url }}#post" title="{{ post.title }}">
-			<li>
-				<b>{{ post.date | date_to_string }}</b> &minus; {{ post.title }}
-				<div class="postexcerpt">
-					{{ post.excerpt }} ...
-				</div>
-			</li>
-		</a>
-  {% endfor %}
-</ul>
+<div class="post">
+	{% for post in site.posts %}
+	<a href="{{ post.url }}" title="{{ post.title }}">
+		<div class="postlisting">
+			<div class="plhead">
+			<b>{{ post.date | date_to_string }}</b> <br /> 
+			{{ post.title }}
+			</div>
+			<hr />
+			<div class="postexcerpt">
+				{{ post.excerpt }}
+			</div>
+		</div>
+	</a>
+	{% endfor %}
+	<div style="clear:both"></div>
+</div>

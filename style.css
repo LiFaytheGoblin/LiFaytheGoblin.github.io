@@ -1,26 +1,22 @@
 body {
-	background-color:#FFFFFF;
+	background-color:#353e82;
 	color:#404040;
 	font-family: 'Maven Pro', sans-serif;
+	width: 900px;
+	margin: 0px auto;
+}
+
+hr {
+	border:1px dotted #7b7b7b;
 }
 
 a {
-    color: #9E654C;
+    color: #353e82;
 	text-decoration: none;
 }
 
 a:hover {
-    color: #FFCE7D;
-}
-
-a li {
-	font-size:1.2em;
-	font-weight:bold;
-	font-family: 'Julius Sans One', sans-serif;
-}
-
-a li:hover {
-	opacity: 0.8;
+    color: #930f44;
 }
 
 li {
@@ -30,44 +26,57 @@ li {
 li:before {
 	content: "♠";
 	font-size:1.2em;
-	color:#404040;
 }
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Julius Sans One', sans-serif;
 }
 
-.container {
-	width: 900px;
-	margin:0px auto;
-	margin-top:50px;
-}
-
 .notfooter {
-	padding:5px;
-	background-color: #FFFCF7;
-	box-shadow:0px 0px 10px #F0DDBD;
+	margin:50px 0px 30px 0px;
+	background-color: #f9f8fc;
+	box-shadow:0px 0px 10px #1d175b;
 }
 
 .header {
-	padding: 0px 20px 0px 20px;
+	padding: 10px 0px 20px 0px;
+	font-size:2.1em;
+	text-align:center;
+}
+
+.postlisting {
+	margin:15px;
+	width:240px;
+	height:250px;
+	float:left;
+	overflow:hidden;
+}
+
+.postlisting:hover {
+	opacity: 0.8;
+}
+
+.plhead {
+	font-size:1.2em;
+	font-weight:bold;
+	font-family: 'Julius Sans One', sans-serif;
+	height:40px;
 }
 
 .postexcerpt {
-	opacity: 1.0;
 	font-size:0.8em;
-	color: #8F7E71;
+	color: #7b7b7b;
 	font-weight: normal;
 	font-family: 'Maven Pro', sans-serif;
 }
 
 .footer {
+	margin-bottom:50px;
 	padding:8px;
-	margin-top:20px;
 	font-size:0.9em;
-	background-color: #FFFCF7;
-	box-shadow:0px 0px 10px #F0DDBD;
-	color: #8F7E71;
+	background-color: #f9f8fc;
+	box-shadow:0px 0px 10px #1d175b;
+	color: #7b7b7b;
 }
 
 .footertext {
@@ -87,26 +96,27 @@ h1, h2, h3, h4, h5, h6 {
 	width:200px;
 	float:left;
 	font-size:0.7em;
-	margin:0px 10px 0px 5px;
-}
-
-#post {
-	padding: 10px 20px 10px 30px;
-}
-
-.subpost {
-	padding-top:10px;
-	font-size:0.9em;
-	color: #8F7E71;
+	margin:2px 10px 0px 5px;
 	text-align:right;
 }
 
-#post img {
+.post {
+	padding: 10px 40px 40px 40px;
+}
+
+.subpost {
+	padding:0px 10px 10px 0px;
+	font-size:0.9em;
+	color: #7b7b7b;
+	text-align:right;
+}
+
+.post img {
 	width:250px;
-	margin:5px 5px 0px 0px;
+	padding:5px 5px 0px 0px;
 }
 
 .caption {
 	font-size:0.9em;
-	color:#8F7E71;
+	color:#7b7b7b;
 }
