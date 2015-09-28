@@ -4,18 +4,23 @@ title: Lifay's Blog
 ---
 <div class="post">
 	{% for post in site.posts %}
-	<a href="{{ post.url }}" title="{{ post.title }}">
 		<div class="postlisting">
 			<div class="plhead">
-			<b>{{ post.date | date_to_string }}</b> <br /> 
-			{{ post.title }}
+				<h3><a href="{{ post.url }}" title="{{ post.title }}">
+				{{ post.date | date_to_string }} <br /> 
+				{{ post.title }}</a>
+				</h3>
 			</div>
 			<hr />
 			<div class="postexcerpt">
 				{{ post.excerpt }}
 			</div>
+			<a href="{{ post.url }}" title="{{ post.title }}">
+				<div class="postcont">
+					{{ post.content | strip_html}}
+				</div>
+			</a>
 		</div>
-	</a>
 	{% endfor %}
 	<div style="clear:both"></div>
 </div>

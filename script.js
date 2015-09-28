@@ -12,13 +12,34 @@
 
 //jQuery Styling
 $(document).ready(function(){
-	$(".licensetext").hide();
+	$(".postcont").hide();
+	$(".postlisting").hover(
+		function(){
+			if(($("body").width()) > 499) {
+			var $thispostcont = $(this).find(".postcont");
+			$thispostcont.css({"height":($(this).find(".postexerpt").css("height"))});
+			$thispostcont.fadeIn("fast");
+			$(this).find(".plhead, .postexcerpt, hr").slideUp("fast");
+			}
+		},
+		function(){
+			if(($("body").width()) > 499) {
+			$(this).removeClass("postcontwithborder");
+			$(this).find(".plhead, .postexcerpt, hr").slideDown("fast");
+			$(this).find(".postcont").fadeOut("fast");
+			}
+		}
+	);
 	$(".license").hover(
 		function(){
+			if(($("body").width()) > 499) {
 			$(".licensetext").fadeIn("slow");
+			}
 		},
 		function() {
+			if(($("body").width()) > 499) {
 			$(".licensetext").fadeOut("fast");
+			}
 		}
 	);
 });
