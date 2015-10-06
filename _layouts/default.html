@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Blog"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" type="image/svg" href="favicon.svg" />
+	<link href='http://lifaythegoblin.github.io/feed.xml' rel='alternate' type='application/atom+xml'>
+	<title>{{ page.title }}</title>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script async type='text/javascript' src='/./script.js'></script>
+</head>
+<body>
+	<div class="notfooter">
+	  {% include header.html %}
+	  {{ content }}  
+	</div>	
+	  {% include footer.html %}
+</body>
+</html>
+<link href='https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700|Julius+Sans+One' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="/style.css" type="text/css" />
