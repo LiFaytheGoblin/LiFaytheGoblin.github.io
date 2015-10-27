@@ -20,11 +20,11 @@ a:hover {
     color: #930f44;
 }
 
-li {
+ul li {
 	list-style-type: none;
 }
 
-li:before {
+ul li:before {
 	content: "♠";
 }
 
