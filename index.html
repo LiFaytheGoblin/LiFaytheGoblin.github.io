@@ -1,26 +1,15 @@
 ---
-layout: default
-title: Lifay's Blog
+layout: page
+title: Linda's Blog
+tagline: Posts
 ---
-<div class="post">
-	{% for post in site.posts %}
-		<div class="postlisting">
-			<div class="plhead">
-				<h3><a href="{{ post.url }}" title="{{ post.title }}">
-				{{ post.date | date_to_string }} <br /> 
-				{{ post.title }}</a>
-				</h3>
-			</div>
-			<hr />
-			<div class="postexcerpt">
-				{{ post.excerpt }}
-			</div>
-			<a href="{{ post.url }}" title="{{ post.title }}">
-				<div class="postcont">
-					{{ post.content | strip_html}}
-				</div>
-			</a>
-		</div>
-	{% endfor %}
-	<div style="clear:both"></div>
-</div>
+
+{% include JB/setup %}
+
+<ul class="posts">
+  {% for post in site.posts %}
+    <li class="list-unstyled"><span>{{ post.date | date_to_string }}</span> &rsaquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
+</ul>
+
+

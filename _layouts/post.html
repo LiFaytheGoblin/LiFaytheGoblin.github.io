@@ -1,8 +1,7 @@
 ---
+theme :
+  name : bootstrap-3
 layout: default
 ---
-<div class="post">
-	<h2>{{ page.title }}</h2>
-	{{ content }}
-</div>
-<div class="subpost">{{ page.date | date_to_string }} | <a href="https://twitter.com/share" target="_blank" class="twitter-share-button" data-via="lifays" data-count="none">Share</a> | <a href="/" title="back">Go back</a></div>
+{% include JB/setup %}
+{% include themes/bootstrap-3/post.html %}
