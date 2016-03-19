@@ -63,31 +63,25 @@
             {% assign group = 'navigation' %}
             {% include JB/pages_list %}
           </ul>
-          <form class="navbar-form navbar-right" role="search">
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="Search">
-            </div>
-            <button type="submit" class="btn btn-default">Submit</button>
-          </form>
         </div><!-- /.navbar-collapse -->
       </nav>
 
-      <div class="container">
-        {{ content }}
-      </div>
-
+	<div class="alert alert-warning" role="alert"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> This Blog is currently being remade using Jekyll Bootstrap with GitHub Pages. I'm terribly sorry for the mess.</div>
+    {{ content }}
+	  
     </div>
-
-    <div id="footer">
-      <div class="container">
-        <p>Created with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
+	
+	<div class="container">
+	  <div id="footer">
+		<p>Created with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
           and <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>.
 		  Hosted on <a href="https://github.com/LiFaytheGoblin/LiFaytheGoblin.github.io">GitHub</a>.
         </p>
-      </div>
-    </div>
+	  </div>
+	</div>
+	
 
-    {% include JB/analytics %}
+    <!-- {% include JB/analytics %} -->
 
 
     <!-- Latest compiled and minified JavaScript, requires jQuery 1.x (2.x not supported in IE8) -->
