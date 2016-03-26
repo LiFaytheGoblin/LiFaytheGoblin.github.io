@@ -1,1 +1,1 @@
-# Linda's Blog - New Styling
+# Linda's Blog
