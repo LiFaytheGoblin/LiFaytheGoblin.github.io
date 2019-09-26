@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 
+:root {
+  --dark: #050505;
+  --bright: #fafafa;
+  --highlight: #ffb915;
+}
+
+
 html, * {
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
@@ -8,8 +15,8 @@ html, * {
 html, body {
   height: 100%;
   font-size: 16px;
-  background-color: #050505;
-  color:#fafafa;
+  background-color: var(--dark);
+  color:var(--bright);
 }
 
 body {
@@ -22,13 +29,32 @@ body {
   grid-template-columns: auto;
 }
 
+footer {
+    border-top: 1px dotted var(--bright);
+    text-align: center;
+    margin-top: 1.2rem;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+}
+
 a {
-  color:#ffb915;
+  color: var(--highlight);
   text-decoration: none;
 }
 
 a:hover {
   color:#fff;
+}
+
+button {
+    cursor: pointer;
+    color:var(--dark);
+    border-style: solid;
+    border-radius: 0.2rem;
+}
+
+button:hover {
+    border-color: var(--highlight);
 }
 
 .invisible {
@@ -37,4 +63,8 @@ a:hover {
 
 .smaller {
     font-size: 98%;
+}
+
+.even-smaller {
+    font-size: 90%;
 }
